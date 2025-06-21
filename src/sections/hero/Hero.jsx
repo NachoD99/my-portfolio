@@ -11,6 +11,7 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
 import IconButton from "@mui/material/IconButton";
+import Background from "./components/Background"
 import { motion } from "framer-motion";
 
 export default function Hero() {
@@ -67,45 +68,10 @@ export default function Hero() {
         px: 3,
       }}
     >
-      {/* Background gradient overlays */}
-      <Box
-        sx={{
-          position: "absolute",
-          inset: 0,
-          background: "linear-gradient(to bottom right, rgba(30, 58, 138, 0.2), rgba(88, 28, 135, 0.2))",
-          zIndex: 0,
-        }}
-      />
-      <Box
-        sx={{
-          position: "absolute",
-          top: "25%",
-          left: "25%",
-          width: 256,
-          height: 256,
-          backgroundColor: "rgba(59, 130, 246, 0.1)",
-          borderRadius: "50%",
-          filter: "blur(48px)",
-          zIndex: 0,
-        }}
-      />
-
-      <Box
-        sx={{
-          position: "absolute",
-          bottom: "25%",
-          right: "25%",
-          width: 384,
-          height: 384,
-          backgroundColor: "rgba(168, 85, 247, 0.1)",
-          borderRadius: "50%",
-          filter: "blur(48px)",
-          zIndex: 0,
-        }}
-      />
+      <Background/>
 
       <Box sx={{ position: "relative", zIndex: 10, maxWidth: "64rem", mx: "auto" }}>
-        <Box sx={{ mb: {xs: 0, md: 6} }}>
+        <Box sx={{ mb: { xs: 0, md: 6 } }}>
           <motion.div
             animate={{
               y: [0, -10, 0],
@@ -118,8 +84,8 @@ export default function Hero() {
           >
             <Box
               sx={{
-                width: {xs: 250, md: 384},
-                height: {xs: 250, md: 384},
+                width: { xs: 250, md: 384 },
+                height: { xs: 250, md: 384 },
                 mx: "auto",
                 mb: 4,
                 borderRadius: "50%",

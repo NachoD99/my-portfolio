@@ -1,5 +1,4 @@
 "use client"
-import { useState, useEffect } from "react"
 
 import Navigation from "./sections/navigation/Navigation"
 import Hero from "./sections/hero/Hero"
