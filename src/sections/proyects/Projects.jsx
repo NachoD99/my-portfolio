@@ -8,24 +8,28 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
-    title: "Crypto Tracker",
-    image: "/projects/crypto-tracker.jpg",
+    title: "Crypto Price Tracker",
+    image: "src/images/projects/crypto-price-tracker.png",
     link: "https://cryptopricetracker-0w43.onrender.com",
+    technologies: ["React", "Express", "Node.js", "CoinCap API", "MUI"],
   },
   {
-    title: "AI Chatbot",
-    image: "/projects/ai-chatbot.jpg",
-    link: "https://chatbot.example.com",
+    title: "Portfolio",
+    image: "src/images/projects/amy-portfolio.png",
+    link: "https://amydonald.xyz/",
+    technologies: ["Next.js", "Tailwind CSS", "Framer Motion"],
   },
   {
-    title: "E-commerce Admin",
-    image: "/projects/ecommerce-admin.jpg",
-    link: "https://admin-dashboard.example.com",
+    title: "WebSite",
+    image: "src/images/projects/trioptimo-web.png",
+    link: "https://trioptimo.com/",
+    technologies: ["HTML", "CSS", "JavaScript", "Bootstrap"],
   },
   {
     title: "Portfolio 2025",
-    image: "/projects/portfolio.jpg",
+    image: "src/images/projects/portfolio.jpg",
     link: "https://portfolio.ignaciodavanzo.com",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
   },
 ];
 
@@ -66,6 +70,7 @@ export default function Projects() {
                   elevation={3}
                   sx={{
                     width: 320,
+                    height: 320,
                     borderRadius: 2,
                     overflow: "hidden",
                     backgroundColor: "rgba(30,41,59,0.5)",
@@ -84,7 +89,7 @@ export default function Projects() {
                     sx={{
                       width: "100%",
                       height: 180,
-                      objectFit: "cover",
+                      objectFit: "fill",
                       borderBottom: "1px solid #374151",
                     }}
                   />
@@ -96,6 +101,35 @@ export default function Projects() {
                       {project.title}
                     </Typography>
                   </Box>
+                  <Typography
+                    variant="subtitle2"
+                    sx={{
+                      mt: 1,
+                      color: "#9ca3af",
+                      fontSize: "0.75rem",
+                      display: "flex",
+                      flexWrap: "wrap",
+                      gap: "6px",
+                    }}
+                  >
+                    {project.technologies.map((tech) => (
+                      <Box
+                        key={tech}
+                        component="span"
+                        sx={{
+                          backgroundColor: "#1f2937",
+                          px: 1,
+                          py: 0.2,
+                          m: 0.5,
+                          borderRadius: 1,
+                          fontSize: "0.7rem",
+                          fontWeight: 500,
+                        }}
+                      >
+                        {tech}
+                      </Box>
+                    ))}
+                  </Typography>
                 </Paper>
               </motion.a>
             </Grid>

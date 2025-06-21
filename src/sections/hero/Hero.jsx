@@ -105,7 +105,7 @@ export default function Hero() {
       />
 
       <Box sx={{ position: "relative", zIndex: 10, maxWidth: "64rem", mx: "auto" }}>
-        <Box sx={{ mb: 6 }}>
+        <Box sx={{ mb: {xs: 0, md: 6} }}>
           <motion.div
             animate={{
               y: [0, -10, 0],
@@ -118,8 +118,8 @@ export default function Hero() {
           >
             <Box
               sx={{
-                width: 384,
-                height: 384,
+                width: {xs: 250, md: 384},
+                height: {xs: 250, md: 384},
                 mx: "auto",
                 mb: 4,
                 borderRadius: "50%",
