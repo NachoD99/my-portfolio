@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { Button, Box } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
-
+import LanguagesSwitch from "./LanguagesSwitch";
 export default function DesktopNav() {
     const [activeSection, setActiveSection] = useState("hero");
     const theme = useTheme();
@@ -96,6 +96,8 @@ export default function DesktopNav() {
                             </Button>
                         );
                     })}
+
+                    <LanguagesSwitch/>
                 </Box>
             )
             }
