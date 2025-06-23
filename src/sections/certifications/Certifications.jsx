@@ -41,7 +41,7 @@ export default function Certifications() {
           wrap="wrap"
         >
           {certifications.map((cert, idx) => (
-            <Grid item key={cert} xs="auto">
+            <Grid item key={cert} sx={{width: { md:"auto", xs:"100%"}}}>
               <motion.div
                 initial={{ opacity: 0, scale: 0.9, x: idx % 2 === 0 ? -20 : 20 }}
                 whileInView={{ opacity: 1, scale: 1, x: 0 }}
@@ -52,8 +52,9 @@ export default function Certifications() {
                 <Paper
                   elevation={3}
                   sx={{
-                    width: 500,
+                    width: {md:"500px", xs:"100%"},
                     p: 3,
+                    m: 0,
                     backgroundColor: "rgba(30,41,59,0.5)",
                     border: "1px solid #374151",
                     borderRadius: 2,
@@ -64,7 +65,7 @@ export default function Certifications() {
                     },
                   }}
                 >
-                  <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
+                  <Box sx={{ display: "flex", alignItems: "center", gap: 2, width: {xs:"100%"} }}>
                     <Box
                       sx={{
                         p: 1.5,
