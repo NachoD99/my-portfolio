@@ -34,7 +34,7 @@ export default function MyLanguages() {
         </Typography>
 
         <Grid container spacing={3} justifyContent="center">
-          {languageData.map(({ lang, level, color }, idx) => (
+          {languageData.map(({ lang, level, color, flag }, idx) => (
             <Grid item key={lang}>
               <motion.div
                 initial={{ opacity: 0, y: 40 }}
@@ -59,14 +59,24 @@ export default function MyLanguages() {
                 >
                   <Box
                     sx={{
-                      backgroundColor: color + "33",
                       p: 1.5,
                       borderRadius: 2,
                       display: "inline-flex",
                       mb: 2,
                     }}
                   >
-                    <Languages size={24} color={color} />
+                    <Box
+                      component="img"
+                      src={flag}
+                      alt={lang}
+                      sx={{
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "cover",
+                        borderRadius: 1,
+                        boxShadow: "0 0 2px rgba(0,0,0,0.4)",
+                      }}
+                    />
                   </Box>
                   <Typography variant="subtitle1" sx={{ fontWeight: 600, mb: 1, color: "#fff" }}>
                     {lang}

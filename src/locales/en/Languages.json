@@ -1,9 +1,9 @@
 {
   "title": "Languages",
   "list": [
-    { "lang": "Spanish", "level": "Native" },
-    { "lang": "English", "level": "Fluent" },
-    { "lang": "Italian", "level": "Fluent" },
-    { "lang": "German", "level": "Basic" }
+    { "lang": "Spanish", "level": "Native", "flag": "https://flagcdn.com/w40/es.png" },
+    { "lang": "English", "level": "Fluent", "flag": "https://flagcdn.com/w40/us.png" },
+    { "lang": "Italian", "level": "Fluent", "flag": "https://flagcdn.com/w40/it.png" },
+    { "lang": "German", "level": "Basic", "flag": "https://flagcdn.com/w40/de.png" }
   ]
 }
