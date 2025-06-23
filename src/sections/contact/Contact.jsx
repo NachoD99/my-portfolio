@@ -41,7 +41,7 @@ export default function Contact() {
           spacing={2}
           justifyContent="center"
           alignItems="center"
-          sx={{ mb: 8 }}
+          sx={{ mb: 8}}
         >
           {[
             {
@@ -101,6 +101,7 @@ export default function Contact() {
                 sx={{
                   px: 4,
                   py: 1.5,
+                  width:{md:"300px", xs: "200px"},
                   fontWeight: 600,
                   textTransform: "none",
                   ...btn.sx,
