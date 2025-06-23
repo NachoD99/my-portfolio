@@ -1,45 +1,42 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import AppBar from "@mui/material/AppBar";
-import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
-import Box from "@mui/material/Box";
-import Slide from "@mui/material/Slide";
-import useScrollTrigger from "@mui/material/useScrollTrigger";
+import {
+  AppBar,
+  Toolbar,
+  Typography,
+  Button,
+  Box,
+  IconButton,
+  Drawer,
+  List,
+  ListItem,
+  ListItemButton,
+  ListItemText,
+} from "@mui/material";
+import MenuIcon from "@mui/icons-material/Menu";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
-/**
- * Optional helper to hide the AppBar when scrolling down
- */
-function HideOnScroll({ children }) {
-  const trigger = useScrollTrigger({ threshold: 0 });
-  return (
-    <Slide appear={false} direction="down" in={!trigger}>
-      {children}
-    </Slide>
-  );
-}
-
 export default function Navigation() {
   const [activeSection, setActiveSection] = useState("hero");
+  const [drawerOpen, setDrawerOpen] = useState(false);
+  const theme = useTheme();
+  const isMdUp = useMediaQuery(theme.breakpoints.up("md"));
+
+  const navItems = [
+    "About",
+    "Education",
+    "Skills",
+    "Experience",
+    "Certifications",
+    "Contact",
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = [
-        "hero",
-        "about",
-        "education",
-        "skills",
-        "experience",
-        "certifications",
-        "languages",
-        "contact",
-      ];
+      const sections = navItems.map((item) => item.toLowerCase());
       const scrollPosition = window.scrollY + 100;
-
       for (const section of sections) {
         const element = document.getElementById(section);
         if (element) {
@@ -54,87 +51,117 @@ export default function Navigation() {
         }
       }
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const scrollToSection = (sectionId) => {
+    setDrawerOpen(false);
     document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
   };
 
-  const navItems = [
-    "About",
-    "Education",
-    "Skills",
-    "Experience",
-    "Certifications",
-    "Contact",
-  ];
-
-  const theme = useTheme();
-  const isMdUp = useMediaQuery(theme.breakpoints.up("md"));
-
   return (
-    <HideOnScroll>
-      <AppBar
-        position="fixed"
-        elevation={4}
-        color="transparent"
+    <AppBar
+      position="fixed"
+      elevation={4}
+      color="transparent"
+      sx={{
+        backdropFilter: "blur(4px)",
+        backgroundColor: "rgba(15, 23, 42, 0.95)",
+        borderBottom: "1px solid rgba(71, 85, 105, 0.8)",
+      }}
+    >
+      <Toolbar
         sx={{
-          backdropFilter: "blur(4px)",
-          backgroundColor: "rgba(15, 23, 42, 0.95)",
-          borderBottom: "1px solid rgba(71, 85, 105, 0.8)",
+          maxWidth: "1536px",
+          width: "100%",
+          mx: "auto",
+          px: { xs: 2, md: 3 },
+          py: 1,
         }}
       >
-        <Toolbar
+        <Typography
+          variant="h6"
+          component="div"
           sx={{
-            maxWidth: "1536px",
-            width: "100%",
-            mx: "auto",
-            px: { xs: 2, md: 3 },
-            py: 1,
+            flexGrow: 1,
+            background: "linear-gradient(to right, #60a5fa, #a78bfa)",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent",
+            fontWeight: "bold",
           }}
         >
-          <Typography
-            variant="h6"
-            component="div"
-            sx={{
-              flexGrow: 1,
-              background: "linear-gradient(to right, #60a5fa, #a78bfa)",
-              WebkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent",
-              fontWeight: "bold",
-            }}
-          >
-            Ignacio Davanzo
-          </Typography>
+          Ignacio Davanzo
+        </Typography>
 
-          {isMdUp && (
-            <Box sx={{ display: "flex", gap: 3 }}>
-              {navItems.map((item) => {
-                const key = item.toLowerCase();
-                const isActive = activeSection === key;
-                return (
-                  <Button
-                    key={item}
-                    onClick={() => scrollToSection(key)}
-                    size="small"
-                    color={isActive ? "primary" : "inherit"}
-                    sx={{
-                      textTransform: "none",
-                      fontSize: "0.875rem",
-                      ...(isActive && { fontWeight: 600 }),
-                    }}
-                  >
-                    {item}
-                  </Button>
-                );
-              })}
-            </Box>
-          )}
-        </Toolbar>
-      </AppBar>
-    </HideOnScroll>
+        {isMdUp ? (
+          <Box sx={{ display: "flex", gap: 3 }}>
+            {navItems.map((item) => {
+              const key = item.toLowerCase();
+              const isActive = activeSection === key;
+              return (
+                <Button
+                  key={item}
+                  onClick={() => scrollToSection(key)}
+                  size="small"
+                  color={isActive ? "primary" : "inherit"}
+                  sx={{
+                    textTransform: "none",
+                    fontSize: "0.875rem",
+                    ...(isActive && { fontWeight: 600 }),
+                    "&:hover": {
+                      color: "#60a5fa",
+                    },
+                  }}
+                >
+                  {item}
+                </Button>
+              );
+            })}
+          </Box>
+        ) : (
+          <>
+            <IconButton
+              edge="end"
+              color="inherit"
+              onClick={() => setDrawerOpen(true)}
+            >
+              <MenuIcon />
+            </IconButton>
+            <Drawer
+              anchor="right"
+              open={drawerOpen}
+              onClose={() => setDrawerOpen(false)}
+              PaperProps={{
+                sx: {
+                  backgroundColor: "#0f172a",
+                  color: "#ffffff",
+                  width: "70%",
+                },
+              }}
+            >
+              <List>
+                {navItems.map((item) => {
+                  const key = item.toLowerCase();
+                  return (
+                    <ListItem key={item} disablePadding>
+                      <ListItemButton onClick={() => scrollToSection(key)}>
+                        <ListItemText
+                          primary={item}
+                          primaryTypographyProps={{
+                            fontSize: "1rem",
+                            fontWeight: 500,
+                          }}
+                        />
+                      </ListItemButton>
+                    </ListItem>
+                  );
+                })}
+              </List>
+            </Drawer>
+          </>
+        )}
+      </Toolbar>
+    </AppBar>
   );
 }
