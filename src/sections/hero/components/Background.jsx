@@ -1,10 +1,33 @@
 "use client";
 import Box from "@mui/material/Box";
+import { motion } from "framer-motion";
 
 export default function Hero() {
+
+  const GlowBox = ({ top, left, bottom, right, width, height, color }) => (
+    <Box
+      component={motion.div}
+      initial={{ opacity: 0.6, scale: 1 }}
+      animate={{ opacity: [0.4, 1, 0.4], scale: [1, 1.05, 1] }}
+      transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+      sx={{
+        position: "absolute",
+        top,
+        left,
+        bottom,
+        right,
+        width,
+        height,
+        backgroundColor: color,
+        borderRadius: "50%",
+        filter: "blur(48px)",
+        zIndex: 0,
+      }}
+    />
+  );
   return (
     <>
-     <Box
+      <Box
         sx={{
           position: "absolute",
           inset: 0,
@@ -12,7 +35,7 @@ export default function Hero() {
           backgroundImage: "",
           zIndex: 0,
         }}
-      /> 
+      />
       <Box
         sx={{
           position: "absolute",
@@ -25,58 +48,10 @@ export default function Hero() {
           zIndex: 0,
         }}
       />
-       <Box
-        sx={{
-          position: "absolute",
-          top: "25%",
-          left: "25%",
-          width: 256,
-          height: 256,
-          backgroundColor: "rgba(59, 130, 246, 0.1)",
-          borderRadius: "50%",
-          filter: "blur(48px)",
-          zIndex: 0,
-        }}
-      />
-      <Box
-        sx={{
-          position: "absolute",
-          top: "10%",
-          left: "85%",
-          width: 256,
-          height: 256,
-          backgroundColor: "rgba(224, 59, 246, 0.1)",
-          borderRadius: "50%",
-          filter: "blur(48px)",
-          zIndex: 0,
-        }}
-      />
-      <Box
-        sx={{
-          position: "absolute",
-          bottom: "25%",
-          right: "25%",
-          width: 384,
-          height: 384,
-          backgroundColor: "rgba(168, 85, 247, 0.1)",
-          borderRadius: "50%",
-          filter: "blur(48px)",
-          zIndex: 0,
-        }}
-      />
-      <Box
-        sx={{
-          position: "absolute",
-          bottom: "-15%",
-          left: "10%",
-          width: 384,
-          height: 384,
-          backgroundColor: "rgba(78, 59, 246, 0.1)",
-          borderRadius: "50%",
-          filter: "blur(48px)",
-          zIndex: 0,
-        }}
-      />
+      <GlowBox top="25%" left="25%" width={256} height={256} color="rgba(59, 130, 246, 0.1)" />
+      <GlowBox top="10%" left="85%" width={256} height={256} color="rgba(224, 59, 246, 0.1)" />
+      <GlowBox bottom="25%" right="25%" width={384} height={384} color="rgba(168, 85, 247, 0.1)" />
+      <GlowBox bottom="-15%" left="10%" width={384} height={384} color="rgba(78, 59, 246, 0.1)" />
     </>
   );
 }
