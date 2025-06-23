@@ -11,6 +11,7 @@ import Certifications from "./sections/certifications/Certifications"
 import LanguagesSection from "./sections/languages/MyLanguages"
 import Contact from "./sections/contact/Contact"
 import ToTop from "./components/layout/ToTop";
+import "./i18n"; 
 
 function App() {
   return (
