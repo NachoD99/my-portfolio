@@ -42,7 +42,6 @@ export default function DesktopNav() {
     }, []);
 
     const scrollToSection = (sectionId) => {
-        setDrawerOpen(false);
         document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
     };
 
