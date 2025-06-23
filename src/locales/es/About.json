@@ -1,1 +1,25 @@
-{}
+{
+  "title": "Sobre mí",
+  "paragraph1": "Soy un apasionado Ingeniero de Software con experiencia en desarrollo fullstack, trabajando actualmente en soluciones de vanguardia en Web3 y blockchain. Mi trayectoria abarca desde aplicaciones empresariales tradicionales hasta plataformas modernas de trading de criptomonedas.",
+  "paragraph2": "Con una sólida base en tecnologías .NET y frameworks modernos como React, aporto tanto profundidad técnica como experiencia en liderazgo a cada proyecto.",
+  "location": "España",
+  "experience": "+5 años de experiencia",
+  "features": {
+    "frontend": {
+      "title": "Frontend",
+      "description": "React, TypeScript, Material UI"
+    },
+    "backend": {
+      "title": "Backend",
+      "description": ".NET, Python, APIs REST"
+    },
+    "cloud": {
+      "title": "Cloud",
+      "description": "Azure, Google Cloud, Meta"
+    },
+    "web3": {
+      "title": "Web3",
+      "description": "Blockchain, Trading de Criptomonedas"
+    }
+  }
+}

@@ -5,18 +5,18 @@ import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 export default function MyLanguages() {
-
-  const languageData = [
-    { lang: "Spanish", level: "Native", color: "#60a5fa" },
-    { lang: "English", level: "Fluent", color: "#a78bfa" },
-    { lang: "Italian", level: "Fluent", color: "#f472b6" },
-    { lang: "German", level: "Basic", color: "#34d399" },
-  ];
+  const { t } = useTranslation("languages");
+  const colorPalette = ["#60a5fa", "#a78bfa", "#f472b6", "#34d399"];
+  const languageData = t("list", { returnObjects: true })?.map((item, idx) => ({
+    ...item,
+    color: colorPalette[idx % colorPalette.length],
+  }));
 
   return (
-    <Box id="languages" sx={{ py: 10, px: 3,  }}>
+    <Box id="languages" sx={{ py: 10, px: 3, }}>
       <Box sx={{ maxWidth: "1200px", mx: "auto" }}>
         <Typography
           variant="h3"
@@ -30,7 +30,7 @@ export default function MyLanguages() {
             mb: 8,
           }}
         >
-          Languages
+          {t("title")}
         </Typography>
 
         <Grid container spacing={3} justifyContent="center">
@@ -52,9 +52,9 @@ export default function MyLanguages() {
                     backgroundColor: "rgba(30,41,59,0.5)",
                     border: "1px solid #374151",
                     borderRadius: 8,
-                      "&:hover": {
-                        boxShadow: `0 0 15px ${color}`,
-                      },
+                    "&:hover": {
+                      boxShadow: `0 0 15px ${color}`,
+                    },
                   }}
                 >
                   <Box

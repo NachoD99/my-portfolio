@@ -5,15 +5,12 @@ import Typography from "@mui/material/Typography";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 export default function Certifications() {
 
-  const certifications = [
-    "Complete Blockchain/Web3 Bootcamp from Zero to Expert",
-    "Cognitive Agent with IBM Watson Assistant",
-    ".NET 6 Essential",
-    "Pandas with Python for Data Science",
-  ];
+  const { t } = useTranslation("certifications");
+const certifications = t("items", { returnObjects: true }) || [];
 
   return (
     <Box id="certifications" sx={{ py: 10, px: 3, backgroundColor: "rgba(31,41,55,0.3)" }}>
@@ -30,7 +27,7 @@ export default function Certifications() {
             mb: 8,
           }}
         >
-          Certifications
+          {t("title")}
         </Typography>
 
         <Grid

@@ -13,9 +13,11 @@ import Stack from "@mui/material/Stack";
 import IconButton from "@mui/material/IconButton";
 import Background from "./components/Background"
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 export default function Hero() {
   const [activeSection, setActiveSection] = useState("hero");
+  const { t } = useTranslation("hero");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -128,7 +130,7 @@ export default function Hero() {
             WebkitTextFillColor: "transparent",
           }}
         >
-          <TypingText text="Software Engineer" />
+          <TypingText text={t("title")} />
         </Typography>
 
         <Typography
@@ -139,10 +141,10 @@ export default function Hero() {
             lineHeight: 1.6,
           }}
         >
-          Fullstack Developer specializing in{' '}
-          <Box component="span" sx={{ color: "#60a5fa" }}>.NET</Box>,{' '}
-          <Box component="span" sx={{ color: "#a78bfa" }}>React</Box>, and{' '}
-          <Box component="span" sx={{ color: "#ec4899" }}>Web3</Box> solutions
+          {t("description")}{' '}
+          <Box component="span" sx={{ color: "#60a5fa" }}>{t("stack1")}</Box>,{' '}
+          <Box component="span" sx={{ color: "#a78bfa" }}>{t("stack2")}</Box> {t("conector")}{' '}
+          <Box component="span" sx={{ color: "#ec4899" }}>{t("stack3")}</Box> {t("end")}
         </Typography>
 
         <Stack
@@ -167,7 +169,7 @@ export default function Hero() {
               },
             }}
           >
-            Get In Touch
+             {t("contact")}
           </Button>
 
           <Button
@@ -187,7 +189,7 @@ export default function Hero() {
               },
             }}
           >
-            View My Work
+             {t("work")}
           </Button>
         </Stack>
 

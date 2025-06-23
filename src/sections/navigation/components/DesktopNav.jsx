@@ -5,18 +5,21 @@ import { Button, Box } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import LanguagesSwitch from "./LanguagesSwitch";
+import { useTranslation } from "react-i18next";
+
 export default function DesktopNav() {
     const [activeSection, setActiveSection] = useState("hero");
     const theme = useTheme();
     const isMdUp = useMediaQuery(theme.breakpoints.up("md"));
+    const { t } = useTranslation("navigation");
 
     const navItems = [
-        "About",
-        "Education",
-        "Skills",
-        "Experience",
-        "Certifications",
-        "Contact",
+        "about",
+        "education",
+        "skills",
+        "experience",
+        "certifications",
+        "contact",
     ];
 
     useEffect(() => {
@@ -91,12 +94,12 @@ export default function DesktopNav() {
                                     },
                                 }}
                             >
-                                {item}
+                                {t(item)}
                             </Button>
                         );
                     })}
 
-                    <LanguagesSwitch/>
+                    <LanguagesSwitch />
                 </Box>
             )
             }

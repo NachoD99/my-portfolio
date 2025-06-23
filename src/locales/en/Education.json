@@ -1,1 +1,20 @@
-{}
+{
+  "title": "Education",
+  "items": [
+    {
+      "degree": "Diploma in Information Systems Engineering",
+      "institution": "National Technological University",
+      "duration": "March 2018 - October 2023 • GPA 3.0",
+      "highlights": [
+        "Participation in the Industry 4.0 Research Group",
+        "Capstone Project: Managing Contributions for NGOs Using a Progressive Web Application",
+        "Participation in annual national conferences"
+      ]
+    },
+    {
+      "degree": "Bachelor in Economics and Business Administration",
+      "institution": "\"Pablo VI\" Institute",
+      "duration": "March 2012 - December 2017"
+    }
+  ]
+}

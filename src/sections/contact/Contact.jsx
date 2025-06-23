@@ -6,8 +6,10 @@ import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import Link from "@mui/material/Link";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 export default function Contact() {
+  const { t } = useTranslation("contact");
   return (
     <Box id="contact" sx={{ py: 10, px: 3, backgroundColor: "rgba(31,41,55,0.3)" }}>
       <Box sx={{ maxWidth: "800px", mx: "auto", textAlign: "center" }}>
@@ -21,7 +23,7 @@ export default function Contact() {
               mb: 4,
             }}
           >
-            Let's Work Together
+            {t("title")}
           </Typography>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -33,7 +35,7 @@ export default function Contact() {
             variant="h6"
             sx={{ color: "#d1d5db", mb: 6 }}
           >
-            I'm always interested in new opportunities and exciting projects. Let's discuss how we can bring your ideas to life.
+            {t("description")}
           </Typography>
         </motion.div>
         <Stack
@@ -47,7 +49,7 @@ export default function Contact() {
             {
               href: "mailto:nachodavanzo@gmail.com",
               icon: <Mail size={18} />,
-              label: "Send Email",
+              label: "Email",
               sx: {
                 background: "linear-gradient(to right, #3b82f6, #8b5cf6)",
                 color: "white",
@@ -114,7 +116,7 @@ export default function Contact() {
           ))}
         </Stack>
         <Typography variant="body2" sx={{ color: "#9ca3af" }}>
-          © 2025 Ignacio Davanzo Portfolio
+           {t("footer")}
         </Typography>
       </Box>
     </Box>

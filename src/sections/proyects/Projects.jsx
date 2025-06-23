@@ -5,6 +5,7 @@ import Typography from "@mui/material/Typography";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const projects = [
   {
@@ -28,6 +29,7 @@ const projects = [
 ];
 
 export default function Projects() {
+  const { t } = useTranslation("projects");
   return (
     <Box id="projects" sx={{ py: 10, px: 3 }}>
       <Box sx={{ maxWidth: "1200px", mx: "auto" }}>
@@ -43,7 +45,7 @@ export default function Projects() {
             mb: 8,
           }}
         >
-          Mis Proyectos
+          {t("title")}
         </Typography>
 
         <Grid container spacing={4} justifyContent="center">

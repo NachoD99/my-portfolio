@@ -1,1 +1,10 @@
-{}
+{
+  "title": "Trabajemos juntos",
+  "description": "Siempre estoy interesado en nuevas oportunidades y proyectos emocionantes. Hablemos sobre cómo podemos hacer realidad tus ideas.",
+  "buttons": {
+    "email": "Enviar Email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  },
+  "footer": "© 2025 Ignacio Davanzo Portfolio"
+}

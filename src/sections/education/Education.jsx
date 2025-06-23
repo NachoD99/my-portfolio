@@ -6,9 +6,10 @@ import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 export default function Education() {
-
+    const { t } = useTranslation("education");
     return (
         <Box id="education" sx={{ py: 10, px: 3, backgroundColor: "rgba(31,41,55,0.3)" }}>
             <Box sx={{ maxWidth: "1200px", mx: "auto" }}>
@@ -24,7 +25,7 @@ export default function Education() {
                         mb: 8,
                     }}
                 >
-                    Education
+                    {t("title")}
                 </Typography>
 
                 <Stack spacing={4}>
@@ -33,7 +34,7 @@ export default function Education() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true, amount: 0.3 }}
                         whileHover={{ scale: 1.03 }}
-                        transition={{ type: "spring", stiffness: 300, delay:  0.15 }}
+                        transition={{ type: "spring", stiffness: 300, delay: 0.15 }}
                     >
                         <Paper
                             elevation={3}
@@ -64,18 +65,18 @@ export default function Education() {
                                 </Grid>
                                 <Grid item xs>
                                     <Typography variant="h6" sx={{ mb: 1, fontWeight: 600, color: "#fff" }}>
-                                        Diploma in Information Systems Engineering
+                                        {t("items.0.degree")}
                                     </Typography>
                                     <Typography variant="subtitle2" sx={{ color: "#60a5fa", mb: 1 }}>
-                                        National Technological University
+                                        {t("items.0.institution")}
                                     </Typography>
                                     <Typography variant="body2" sx={{ color: "#9ca3af", mb: 2 }}>
-                                        March 2018 - October 2023 • GPA 3.0
+                                        {t("items.0.duration")}
                                     </Typography>
                                     <Stack component="ul" spacing={0.5} sx={{ pl: 2, color: "#d1d5db" }}>
-                                        <li>Participation in the Industry 4.0 Research Group</li>
-                                        <li>Capstone Project: Managing Contributions for NGOs Using a Progressive Web Application</li>
-                                        <li>Participation in annual national conferences</li>
+                                        {t("items.0.highlights", { returnObjects: true }).map((point, index) => (
+                                            <li key={index}>{point}</li>
+                                        ))}
                                     </Stack>
                                 </Grid>
                             </Grid>
@@ -86,7 +87,7 @@ export default function Education() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true, amount: 0.3 }}
                         whileHover={{ scale: 1.03 }}
-                        transition={{ type: "spring", stiffness: 300, delay:  0.15 }}
+                        transition={{ type: "spring", stiffness: 300, delay: 0.15 }}
                     >
                         <Paper
                             elevation={3}
@@ -117,13 +118,13 @@ export default function Education() {
                                 </Grid>
                                 <Grid item xs>
                                     <Typography variant="h6" sx={{ mb: 1, fontWeight: 600, color: "#fff" }}>
-                                        Bachelor in Economics and Business Administration
+                                        {t("items.1.degree")}
                                     </Typography>
                                     <Typography variant="subtitle2" sx={{ color: "#a78bfa", mb: 1 }}>
-                                        "Pablo VI" Institute
+                                        {t("items.1.institution")}
                                     </Typography>
                                     <Typography variant="body2" sx={{ color: "#9ca3af" }}>
-                                        March 2012 - December 2017
+                                        {t("items.1.duration")}
                                     </Typography>
                                 </Grid>
                             </Grid>

@@ -17,20 +17,22 @@ import {
 import MenuIcon from "@mui/icons-material/Menu";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import { useTranslation } from "react-i18next";
 
 export default function MobileNav() {
     const [activeSection, setActiveSection] = useState("hero");
     const [drawerOpen, setDrawerOpen] = useState(false);
     const theme = useTheme();
     const isMdUp = useMediaQuery(theme.breakpoints.up("md"));
+    const { t } = useTranslation("navigation");
 
     const navItems = [
-        "About",
-        "Education",
-        "Skills",
-        "Experience",
-        "Certifications",
-        "Contact",
+        "about",
+        "education",
+        "skills",
+        "experience",
+        "certifications",
+        "contact",
     ];
 
     useEffect(() => {
@@ -90,7 +92,7 @@ export default function MobileNav() {
                                     <ListItem key={item} disablePadding>
                                         <ListItemButton onClick={() => scrollToSection(key)}>
                                             <ListItemText
-                                                primary={item}
+                                                primary={t(item)}
                                                 primaryTypographyProps={{
                                                     fontSize: "1rem",
                                                     fontWeight: 500,

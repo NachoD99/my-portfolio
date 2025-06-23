@@ -1,1 +1,29 @@
-{}
+{
+  "title": "Habilidades Técnicas",
+  "categories": [
+    {
+      "title": "Lenguajes de Programación",
+      "skills": [".NET6", "Python", "JavaScript", "TypeScript"]
+    },
+    {
+      "title": "Tecnologías",
+      "skills": ["React", "Blazor WASM", "Material UI", "MudBlazor"]
+    },
+    {
+      "title": "APIs",
+      "skills": ["RESTFULL", "SOAP", "WCF", "WebHook"]
+    },
+    {
+      "title": "Plataformas Cloud",
+      "skills": ["Azure Cloud", "Google Cloud", "Meta Cloud"]
+    },
+    {
+      "title": "Bases de Datos y ORM",
+      "skills": ["SQL Server", "Azure DB", "NHibernate", "Entity Framework"]
+    },
+    {
+      "title": "Herramientas y Gestión",
+      "skills": ["SCRUM", "Jira", "Azure DevOps", "Kanban", "GitLab", "GitHub"]
+    }
+  ]
+}

@@ -1,1 +1,10 @@
-{}
+{
+  "title": "Let's Work Together",
+  "description": "I'm always interested in new opportunities and exciting projects. Let's discuss how we can bring your ideas to life.",
+  "buttons": {
+    "email": "Send Email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  },
+  "footer": "© 2025 Ignacio Davanzo Portfolio"
+}

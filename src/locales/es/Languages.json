@@ -1,1 +1,9 @@
-{}
+{
+  "title": "Idiomas",
+  "list": [
+    { "lang": "Español", "level": "Nativo" },
+    { "lang": "Inglés", "level": "Fluido" },
+    { "lang": "Italiano", "level": "Fluido" },
+    { "lang": "Alemán", "level": "Básico" }
+  ]
+}

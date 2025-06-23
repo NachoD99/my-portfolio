@@ -1,1 +1,11 @@
-{}
+{
+  "title": "Software Engineer",
+  "description": "Fullstack Developer specializing in",
+  "contact": "Get In Touch",
+  "work": "View My Work",
+  "stack1": ".NET",
+  "stack2": "React",
+  "stack3": "Web3",
+  "conector": "and",
+  "end": "solutions"
+}

@@ -1,1 +1,11 @@
-{}
+{
+  "title": "Ingeniero de Software",
+  "description": "Desarrollador Fullstack especializado en",
+  "contact": "Contáctame",
+  "work": "Ver mi trabajo",
+  "stack1": ".NET",
+  "stack2": "React",
+  "stack3": "Web3",
+  "conector": "y",
+  "end": " "
+}

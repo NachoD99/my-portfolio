@@ -1,1 +1,20 @@
-{}
+{
+  "title": "Educación",
+  "items": [
+    {
+      "degree": "Diplomado en Ingeniería en Sistemas de Información",
+      "institution": "Universidad Tecnológica Nacional",
+      "duration": "Marzo 2018 - Octubre 2023 • Promedio 8.4",
+      "highlights": [
+        "Participación en el Grupo de Investigación Industria 4.0",
+        "Proyecto Final: Gestión de Donaciones para ONGs con una Aplicación Web Progresiva",
+        "Participación en congresos nacionales anuales"
+      ]
+    },
+    {
+      "degree": "Bachiller en Economía y Administración de Empresas",
+      "institution": "Instituto \"Pablo VI\"",
+      "duration": "Marzo 2012 - Diciembre 2017"
+    }
+  ]
+}

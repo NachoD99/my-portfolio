@@ -1,1 +1,23 @@
-{}
+{
+  "title": "Professional Experience",
+  "jobs": [
+    {
+      "title": "Software Engineer",
+      "company": "G.C.S SL • Spain",
+      "date": "May 2025 - Present",
+      "description": "I work as a Software Engineer and Web3 solutions developer, focusing on cryptocurrency trading platforms and related blockchain-based services."
+    },
+    {
+      "title": ".NET Fullstack Developer",
+      "company": "Cegsoft • Puerto Rico",
+      "date": "July 2023 - Present",
+      "description": "I was responsible for the annual update of tax collection forms for the IRS and the Treasury Department, adapting program logic to reflect new tax legislation. My role also involved development testing, as well as task estimation and management to ensure timely and accurate delivery."
+    },
+    {
+      "title": ".NET Fullstack Developer",
+      "company": "SanCor Seguros • Argentina",
+      "date": "February 2021 - June 2023",
+      "description": "I worked on two projects for this important Argentine insurance company, where I was involved in the maintenance and development of two applications, in which I have resolved critical errors in production, improvements of execution time, requirements of requirements, testing. On the other hand, I have also led a team and trained new members."
+    }
+  ]
+}

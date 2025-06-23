@@ -1,1 +1,23 @@
-{}
+{
+  "title": "Experiencia Profesional",
+  "jobs": [
+    {
+      "title": "Ingeniero de Software",
+      "company": "G.C.S SL • España",
+      "date": "Mayo 2025 - Actualidad",
+      "description": "Trabajo como Ingeniero de Software y desarrollador de soluciones Web3, enfocado en plataformas de trading de criptomonedas y servicios relacionados con blockchain."
+    },
+    {
+      "title": "Desarrollador Fullstack .NET",
+      "company": "Cegsoft • Puerto Rico",
+      "date": "Julio 2023 - Actualidad",
+      "description": "Fui responsable de la actualización anual de formularios de recaudación de impuestos para el IRS y el Departamento del Tesoro, adaptando la lógica del programa a nuevas legislaciones fiscales. También participé en pruebas de desarrollo y en la estimación y gestión de tareas para garantizar entregas puntuales y precisas."
+    },
+    {
+      "title": "Desarrollador Fullstack .NET",
+      "company": "SanCor Seguros • Argentina",
+      "date": "Febrero 2021 - Junio 2023",
+      "description": "Trabajé en dos proyectos para esta importante aseguradora argentina, participando en el mantenimiento y desarrollo de aplicaciones, resolviendo errores críticos en producción, mejorando tiempos de ejecución y liderando equipo y formación de nuevos miembros."
+    }
+  ]
+}

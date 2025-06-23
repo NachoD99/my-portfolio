@@ -1,1 +1,17 @@
-{}
+{
+  "title": "My Projects",
+  "projects": [
+    {
+      "title": "Crypto Price Tracker",
+      "technologies": ["React", "Express", "Node.js", "CoinCap API", "MUI"]
+    },
+    {
+      "title": "Portfolio",
+      "technologies": ["Next.js", "Tailwind CSS", "Framer Motion"]
+    },
+    {
+      "title": "Website",
+      "technologies": ["HTML", "CSS", "JavaScript", "Bootstrap"]
+    }
+  ]
+}
