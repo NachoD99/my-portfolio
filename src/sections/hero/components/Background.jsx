@@ -13,6 +13,18 @@ export default function Hero() {
           zIndex: 0,
         }}
       /> 
+      <Box
+        sx={{
+          position: "absolute",
+          inset: 0,
+          backgroundImage: `url('/images/blob-scene-haikei.svg')`,
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          opacity: 0.7,
+          zIndex: 0,
+        }}
+      />
        <Box
         sx={{
           position: "absolute",
@@ -26,7 +38,19 @@ export default function Hero() {
           zIndex: 0,
         }}
       />
-
+      <Box
+        sx={{
+          position: "absolute",
+          top: "10%",
+          left: "85%",
+          width: 256,
+          height: 256,
+          backgroundColor: "rgba(224, 59, 246, 0.1)",
+          borderRadius: "50%",
+          filter: "blur(48px)",
+          zIndex: 0,
+        }}
+      />
       <Box
         sx={{
           position: "absolute",
@@ -43,12 +67,13 @@ export default function Hero() {
       <Box
         sx={{
           position: "absolute",
-          inset: 0,
-          backgroundImage: `url('src/images/blob-scene-haikei.svg')`,
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "center",
-          backgroundSize: "cover",
-          opacity: 0.7,
+          bottom: "-15%",
+          left: "10%",
+          width: 384,
+          height: 384,
+          backgroundColor: "rgba(78, 59, 246, 0.1)",
+          borderRadius: "50%",
+          filter: "blur(48px)",
           zIndex: 0,
         }}
       />
