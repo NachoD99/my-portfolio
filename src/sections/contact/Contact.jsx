@@ -45,7 +45,7 @@ export default function Contact() {
         >
           {[
             {
-              href: "mailto:your.email@example.com",
+              href: "mailto:nachodavanzo@gmail.com",
               icon: <Mail size={18} />,
               label: "Send Email",
               sx: {
