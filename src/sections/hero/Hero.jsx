@@ -157,6 +157,7 @@ export default function Hero() {
             sx={{
               px: 4,
               py: 1.5,
+              borderRadius: 8,
               background: "linear-gradient(to right, #3b82f6, #8b5cf6)",
               fontWeight: "600",
               textTransform: "none",
@@ -176,6 +177,7 @@ export default function Hero() {
               px: 4,
               py: 1.5,
               borderColor: "#4b5563",
+              borderRadius: 8,
               color: "#e5e7eb",
               fontWeight: "600",
               textTransform: "none",

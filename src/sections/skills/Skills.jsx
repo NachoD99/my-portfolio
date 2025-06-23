@@ -73,7 +73,6 @@ export default function Skills() {
                                 initial={{ opacity: 0, y: 50 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true, amount: 0.3 }}
-                                whileHover={{ scale: 1.05, boxShadow: `0px 0px 15px ${color}` }}
                                 transition={{ type: "spring", stiffness: 300 }}
                             >
                                 <Paper
@@ -83,7 +82,11 @@ export default function Skills() {
                                         p: 3,
                                         backgroundColor: "rgba(30,41,59,0.5)",
                                         border: "1px solid #374151",
-                                        borderRadius: 2,
+                                        borderRadius: 8,
+                                        '&:hover': {
+                                            scale: 1.05,
+                                            boxShadow: `0px 0px 15px ${color}`
+                                        },
                                     }}
                                 >
                                     <Typography

@@ -25,12 +25,6 @@ const projects = [
     link: "https://trioptimo.com/",
     technologies: ["HTML", "CSS", "JavaScript", "Bootstrap"],
   },
-  {
-    title: "Portfolio 2025",
-    image: "/images/projects/portfolio.jpg",
-    link: "https://portfolio.ignaciodavanzo.com",
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
-  },
 ];
 
 export default function Projects() {
@@ -71,7 +65,7 @@ export default function Projects() {
                   sx={{
                     width: 320,
                     height: 320,
-                    borderRadius: 2,
+                    borderRadius: 8,
                     overflow: "hidden",
                     backgroundColor: "rgba(30,41,59,0.5)",
                     border: "1px solid #374151",

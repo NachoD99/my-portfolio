@@ -51,7 +51,7 @@ export default function MyLanguages() {
                     textAlign: "center",
                     backgroundColor: "rgba(30,41,59,0.5)",
                     border: "1px solid #374151",
-                    borderRadius: 2,
+                    borderRadius: 8,
                       "&:hover": {
                         boxShadow: `0 0 15px ${color}`,
                       },

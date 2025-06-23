@@ -126,7 +126,7 @@ export default function About() {
                     width: "100%",
                     backgroundColor: "rgba(30,41,59,0.5)",
                     border: "1px solid #374151",
-                    borderRadius: 2,
+                    borderRadius: 8,
                     transition: "transform 0.3s, box-shadow 0.3s",
                     "&:hover": {
                       transform: "scale(1.05)",

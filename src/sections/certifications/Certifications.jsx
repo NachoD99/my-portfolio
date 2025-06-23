@@ -57,7 +57,7 @@ export default function Certifications() {
                     m: 0,
                     backgroundColor: "rgba(30,41,59,0.5)",
                     border: "1px solid #374151",
-                    borderRadius: 2,
+                    borderRadius: 8,
                     transition: "all 0.3s ease",
                     '&:hover': {
                       borderColor: "rgba(96,165,250,0.5)",

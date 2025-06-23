@@ -45,7 +45,7 @@ export default function Education() {
                                     borderColor: "rgba(96,165,250,0.5)",
                                     boxShadow: "0 0 15px rgba(96,165,250)",
                                 },
-                                borderRadius: 2,
+                                borderRadius: 8,
                                 transition: "all 0.3s ease",
                             }}
                         >
@@ -98,7 +98,7 @@ export default function Education() {
                                     borderColor: "rgba(168,85,247,0.5)",
                                     boxShadow: "0 0 15px rgba(168,85,247)",
                                 },
-                                borderRadius: 2,
+                                borderRadius: 8,
                                 transition: "all 0.3s ease",
                             }}
                         >

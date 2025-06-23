@@ -101,6 +101,7 @@ export default function Contact() {
                 sx={{
                   px: 4,
                   py: 1.5,
+                  borderRadius: 8,
                   width:{md:"300px", xs: "200px"},
                   fontWeight: 600,
                   textTransform: "none",

@@ -76,7 +76,7 @@ export default function Experience() {
                   p: 4,
                   backgroundColor: "rgba(30,41,59,0.5)",
                   border: "1px solid #374151",
-                  borderRadius: 2,
+                  borderRadius: 8,
                   transition: "all 0.3s ease",
                   '&:hover': {
                     borderColor: job.borderHover,
