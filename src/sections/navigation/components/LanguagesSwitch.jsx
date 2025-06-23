@@ -8,6 +8,8 @@ import {
   MenuItem,
   Typography,
   useMediaQuery,
+  Stack,
+  Button,
 } from "@mui/material";
 import LanguageIcon from "@mui/icons-material/Language";
 import { useTheme } from "@mui/material/styles";
@@ -34,10 +36,60 @@ export default function LanguagesSwitch() {
   };
 
   const languages = [
-    { code: "en", label: "English", flag: "🇺🇸" },
-    { code: "es", label: "Español", flag: "🇪🇸" },
+    { code: "en", label: "English", flag: "https://flagcdn.com/w40/us.png" },
+    { code: "es", label: "Español", flag: "https://flagcdn.com/w40/es.png" },
   ];
 
+  // --- MOBILE RENDERING ---
+  if (isMobile) {
+    return (
+  <Box sx={{ mt: 2 }}>
+    <Stack direction="column" spacing={1}>
+      {languages.map((lang) => {
+        const isActive = i18n.language === lang.code;
+        return (
+          <Box
+            key={lang.code}
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              gap: 1.2,
+              px: 1,
+              py: 0.5,
+              borderRadius: 1,
+              cursor: "pointer",
+              backgroundColor: isActive ? "rgba(167, 139, 250, 0.1)" : "transparent",
+              "&:hover": {
+                backgroundColor: "rgba(96,165,250,0.1)",
+              },
+            }}
+            onClick={() => i18n.changeLanguage(lang.code)}
+          >
+            <Box
+              component="img"
+              src={lang.flag}
+              alt={lang.label}
+              sx={{
+                width: 20,
+                height: 14,
+                borderRadius: "2px",
+                objectFit: "cover",
+                boxShadow: "0 0 2px rgba(0,0,0,0.4)",
+              }}
+            />
+            <Typography variant="body2" sx={{ whiteSpace: 'nowrap' }}>
+              {lang.label}
+            </Typography>
+          </Box>
+        );
+      })}
+    </Stack>
+  </Box>
+);
+
+  }
+
+  // --- DESKTOP RENDERING ---
   return (
     <Box>
       <IconButton
@@ -86,7 +138,18 @@ export default function LanguagesSwitch() {
               },
             }}
           >
-            <Typography fontSize="1.2rem">{lang.flag}</Typography>
+            <Box
+              component="img"
+              src={lang.flag}
+              alt={lang.label}
+              sx={{
+                width: 20,
+                height: 14,
+                borderRadius: "2px",
+                objectFit: "cover",
+                boxShadow: "0 0 2px rgba(0,0,0,0.4)",
+              }}
+            />
             <Typography variant="body2">{lang.label}</Typography>
           </MenuItem>
         ))}

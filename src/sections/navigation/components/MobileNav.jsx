@@ -18,6 +18,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTranslation } from "react-i18next";
+import LanguagesSwitch from "./LanguagesSwitch";
 
 export default function MobileNav() {
     const [activeSection, setActiveSection] = useState("hero");
@@ -103,6 +104,7 @@ export default function MobileNav() {
                                 );
                             })}
                         </List>
+                        <LanguagesSwitch />
                     </Drawer>
                 </>
             )}
