@@ -9,25 +9,25 @@ import { motion } from "framer-motion";
 const projects = [
   {
     title: "Crypto Price Tracker",
-    image: "src/images/projects/crypto-price-tracker.png",
+    image: "/images/projects/crypto-price-tracker.png",
     link: "https://cryptopricetracker-0w43.onrender.com",
     technologies: ["React", "Express", "Node.js", "CoinCap API", "MUI"],
   },
   {
     title: "Portfolio",
-    image: "src/images/projects/amy-portfolio.png",
+    image: "/images/projects/amy-portfolio.png",
     link: "https://amydonald.xyz/",
     technologies: ["Next.js", "Tailwind CSS", "Framer Motion"],
   },
   {
     title: "WebSite",
-    image: "src/images/projects/trioptimo-web.png",
+    image: "/images/projects/trioptimo-web.png",
     link: "https://trioptimo.com/",
     technologies: ["HTML", "CSS", "JavaScript", "Bootstrap"],
   },
   {
     title: "Portfolio 2025",
-    image: "src/images/projects/portfolio.jpg",
+    image: "/images/projects/portfolio.jpg",
     link: "https://portfolio.ignaciodavanzo.com",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
   },

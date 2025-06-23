@@ -103,7 +103,7 @@ export default function Hero() {
                 }}
               >
                 <img
-                  src="src/images/ignaciodavanzo.png"
+                  src="/images/ignaciodavanzo.png"
                   alt="Profile"
                   style={{
                     width: "100%",
