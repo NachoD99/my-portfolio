@@ -68,6 +68,7 @@ export default function Hero() {
         overflow: "hidden",
         textAlign: "center",
         px: 3,
+        mt: {xs: 6}
       }}
     >
       <Background/>
