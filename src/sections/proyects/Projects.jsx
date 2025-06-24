@@ -18,13 +18,19 @@ const projects = [
     title: "Portfolio",
     image: "/images/projects/amy-portfolio.png",
     link: "https://amydonald.xyz/",
-    technologies: ["Next.js", "Tailwind CSS", "Framer Motion"],
+    technologies: ["Node.js", "Framer Motion", "Mail Sender", "MUI", "React"],
   },
   {
     title: "WebSite",
     image: "/images/projects/trioptimo-web.png",
     link: "https://trioptimo.com/",
-    technologies: ["HTML", "CSS", "JavaScript", "Bootstrap"],
+    technologies: ["Node.js", "JavaScript", "Mail Sender", "MUI", "Framer Motion", "React"],
+  },
+  {
+    title: "WebSite Catalog",
+    image: "/images/projects/costumbres-argentinas-web.png",
+    link: "https://costumbresargentinas.onrender.com/",
+    technologies: ["HTML", "CSS", "EJS", "Mail Sender", "WhatsApp"],
   },
 ];
 
