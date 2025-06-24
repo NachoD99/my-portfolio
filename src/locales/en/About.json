@@ -1,25 +1,25 @@
 {
   "title": "About Me",
-  "paragraph1": "I'm a passionate Software Engineer with expertise in fullstack development, currently working on cutting-edge Web3 and blockchain solutions. My journey spans from traditional enterprise applications to modern cryptocurrency trading platforms.",
+  "paragraph1": "I am a Software Engineer passionate about full-stack development, with experience across the entire software lifecycle (SDLC) and a constant focus on process optimization and automation.",
   "paragraph2": "With a strong foundation in .NET technologies and modern web frameworks like React, I bring both technical depth and leadership experience to every project.",
   "location": "Spain",
   "experience": "5+ Years Experience",
   "features": {
     "frontend": {
       "title": "Frontend",
-      "description": "React, TypeScript, Material UI"
+      "description": "TypeScript, Javascript, SPA, PWA. MVC"
     },
     "backend": {
       "title": "Backend",
-      "description": ".NET, Python, REST APIs"
+      "description": ".NET, Python, APIRest, Relational Database, ORM"
     },
     "cloud": {
       "title": "Cloud",
-      "description": "Azure, Google Cloud, Meta"
+      "description": "Azure DevOps, Google Cloud, Meta, AWS"
     },
     "web3": {
-      "title": "Web3",
-      "description": "Blockchain, Crypto Trading"
+      "title": "Management",
+      "description": "SCRUM, Jira, Kanban, Trello, Asana"
     }
   }
 }

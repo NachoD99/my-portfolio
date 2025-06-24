@@ -3,7 +3,7 @@
   "categories": [
     {
       "title": "Lenguajes de Programación",
-      "skills": [".NET6", "Python", "JavaScript", "TypeScript"]
+      "skills": [".NET", "Python", "JavaScript", "TypeScript"]
     },
     {
       "title": "Tecnologías",
@@ -11,11 +11,11 @@
     },
     {
       "title": "APIs",
-      "skills": ["RESTFULL", "SOAP", "WCF", "WebHook"]
+      "skills": ["RESTful", "SOAP", "WCF", "WebHook"]
     },
     {
       "title": "Plataformas Cloud",
-      "skills": ["Azure Cloud", "Google Cloud", "Meta Cloud"]
+      "skills": ["Azure Cloud", "Google Cloud", "Meta Cloud", "AWS"]
     },
     {
       "title": "Bases de Datos y ORM",
