@@ -25,6 +25,7 @@ const certifications = t("items", { returnObjects: true }) || [];
             WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent",
             mb: 8,
+            fontFamily: 'Space Grotesk',
           }}
         >
           {t("title")}
@@ -75,7 +76,7 @@ const certifications = t("items", { returnObjects: true }) || [];
                     </Box>
                     <Typography
                       variant="subtitle1"
-                      sx={{ fontWeight: 600, color: "#e5e7eb" }}
+                      sx={{ fontWeight: 600, color: "#e5e7eb", fontFamily: 'Space Grotesk' }}
                     >
                       {cert}
                     </Typography>

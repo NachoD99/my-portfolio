@@ -97,6 +97,7 @@ export default function MobileNav() {
                                                 primaryTypographyProps={{
                                                     fontSize: "1rem",
                                                     fontWeight: 500,
+                                                    fontFamily: 'Space Grotesk'
                                                 }}
                                             />
                                         </ListItemButton>

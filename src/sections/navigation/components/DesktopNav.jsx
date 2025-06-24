@@ -72,6 +72,7 @@ export default function DesktopNav() {
                                     py: 0.5,
                                     color: isActive ? "#a78bfa" : "#cbd5e1",
                                     fontWeight: isActive ? 600 : 400,
+                                    fontFamily: 'Space Grotesk',
                                     fontSize: "0.9rem",
                                     textTransform: "uppercase",
                                     letterSpacing: "0.05em",

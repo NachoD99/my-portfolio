@@ -43,6 +43,7 @@ export default function Projects() {
             WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent",
             mb: 8,
+            fontFamily: 'Space Grotesk',
           }}
         >
           {t("title")}
@@ -85,14 +86,15 @@ export default function Projects() {
                     sx={{
                       width: "100%",
                       height: 180,
-                      objectFit: "fill",
+                      objectFit: "contain",
+                      loading: "lazy",
                       borderBottom: "1px solid #374151",
                     }}
                   />
                   <Box sx={{ p: 2 }}>
                     <Typography
                       variant="subtitle1"
-                      sx={{ fontWeight: 600, color: "#e5e7eb" }}
+                      sx={{ fontWeight: 600, color: "#e5e7eb", fontFamily: 'Space Grotesk' }}
                     >
                       {project.title}
                     </Typography>

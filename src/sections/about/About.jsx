@@ -59,6 +59,7 @@ export default function About() {
                         WebkitBackgroundClip: "text",
                         WebkitTextFillColor: "transparent",
                         mb: 8,
+                        fontFamily: 'Space Grotesk',
                     }}
                 >
                     {t("title")}
@@ -137,7 +138,7 @@ export default function About() {
                                         <Box>
                                             <Typography
                                                 variant="subtitle1"
-                                                sx={{ fontWeight: 600, mb: 1, color: "#fff" }}
+                                                sx={{ fontWeight: 600, mb: 1, color: "#fff", fontFamily: 'Space Grotesk' }}
                                             >
                                                 {item.title}
                                             </Typography>

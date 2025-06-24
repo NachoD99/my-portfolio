@@ -25,6 +25,7 @@ export default function Skills() {
                         WebkitBackgroundClip: "text",
                         WebkitTextFillColor: "transparent",
                         mb: 8,
+                        fontFamily: 'Space Grotesk',
                     }}
                 >
                      {t("title")}
@@ -64,7 +65,7 @@ export default function Skills() {
               },
             }}
           >
-            <Typography variant="subtitle1" sx={{ fontWeight: 600, mb: 2, color }}>
+            <Typography variant="subtitle1" sx={{ fontWeight: 600, mb: 2, color, fontFamily: 'Space Grotesk' }}>
               {title}
             </Typography>
 

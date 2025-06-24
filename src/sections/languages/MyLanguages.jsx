@@ -28,6 +28,7 @@ export default function MyLanguages() {
             WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent",
             mb: 8,
+            fontFamily: 'Space Grotesk',
           }}
         >
           {t("title")}
@@ -78,7 +79,7 @@ export default function MyLanguages() {
                       }}
                     />
                   </Box>
-                  <Typography variant="subtitle1" sx={{ fontWeight: 600, mb: 1, color: "#fff" }}>
+                  <Typography variant="subtitle1" sx={{ fontWeight: 600, mb: 1, color: "#fff", fontFamily: 'Space Grotesk' }}>
                     {lang}
                   </Typography>
                   <Typography variant="body2" sx={{ color }}>

@@ -25,6 +25,7 @@ export default function Experience() {
             WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent",
             mb: 8,
+            fontFamily: 'Space Grotesk',
           }}
         >
           {t("title")}
@@ -87,7 +88,7 @@ export default function Experience() {
             </Box>
           </Grid>
           <Grid item xs>
-            <Typography variant="h6" sx={{ mb: 1, fontWeight: 600, color: "#fff" }}>
+            <Typography variant="h6" sx={{ mb: 1, fontWeight: 600, color: "#fff", fontFamily: 'Space Grotesk' }}>
               {job.title}
             </Typography>
             <Typography variant="subtitle2" sx={{ color: iconColor, mb: 1 }}>

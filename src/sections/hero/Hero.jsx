@@ -125,6 +125,7 @@ export default function Hero() {
           sx={{
             fontWeight: "bold",
             fontSize: { xs: "2.5rem", md: "4rem" },
+            fontFamily: 'Space Grotesk',
             mb: 3,
             background: "linear-gradient(to right, #60a5fa, #a78bfa, #ec4899)",
             WebkitBackgroundClip: "text",

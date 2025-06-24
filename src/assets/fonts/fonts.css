@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('../../../public/fonts/Space_Grotesk/spacegrotesk.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../../../public/fonts/Inter/inter.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}

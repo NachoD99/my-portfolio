@@ -23,6 +23,7 @@ export default function Education() {
                         WebkitBackgroundClip: "text",
                         WebkitTextFillColor: "transparent",
                         mb: 8,
+                        fontFamily: 'Space Grotesk',
                     }}
                 >
                     {t("title")}
@@ -64,7 +65,7 @@ export default function Education() {
                                     </Box>
                                 </Grid>
                                 <Grid item xs>
-                                    <Typography variant="h6" sx={{ mb: 1, fontWeight: 600, color: "#fff" }}>
+                                    <Typography variant="h6" sx={{ mb: 1, fontWeight: 600, color: "#fff", fontFamily: 'Space Grotesk' }}>
                                         {t("items.0.degree")}
                                     </Typography>
                                     <Typography variant="subtitle2" sx={{ color: "#60a5fa", mb: 1 }}>
@@ -117,7 +118,7 @@ export default function Education() {
                                     </Box>
                                 </Grid>
                                 <Grid item xs>
-                                    <Typography variant="h6" sx={{ mb: 1, fontWeight: 600, color: "#fff" }}>
+                                    <Typography variant="h6" sx={{ mb: 1, fontWeight: 600, color: "#fff", fontFamily: 'Space Grotesk' }}>
                                         {t("items.1.degree")}
                                     </Typography>
                                     <Typography variant="subtitle2" sx={{ color: "#a78bfa", mb: 1 }}>

@@ -34,6 +34,7 @@ export default function Navigation() {
           component="div"
           sx={{
             flexGrow: 1,
+            fontFamily: 'Space Grotesk',
             background: "linear-gradient(to right, #60a5fa, #a78bfa)",
             WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent",

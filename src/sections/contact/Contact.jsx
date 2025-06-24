@@ -21,6 +21,7 @@ export default function Contact() {
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
               mb: 4,
+              fontFamily: 'Space Grotesk',
             }}
           >
             {t("title")}
