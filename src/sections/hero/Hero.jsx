@@ -93,6 +93,7 @@ export default function Hero() {
                 mb: 4,
                 borderRadius: "50%",
                 p: 0.5,
+                mt: {xs: 6},
                 background: "linear-gradient(to bottom right, #60a5fa, #a78bfa)",
               }}
             >
