@@ -18,6 +18,7 @@ export default function DesktopNav() {
         "education",
         "skills",
         "experience",
+        "projects",
         "certifications",
         "contact",
     ];

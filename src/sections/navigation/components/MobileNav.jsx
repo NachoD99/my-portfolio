@@ -32,6 +32,7 @@ export default function MobileNav() {
         "education",
         "skills",
         "experience",
+        "projects",
         "certifications",
         "contact",
     ];
