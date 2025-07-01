@@ -11,7 +11,7 @@
     },
     "backend": {
       "title": "Backend",
-      "description": ".NET, Python, APIRest, Relational Database, ORM"
+      "description": ".NET, Python, APIRest, Relational Database, ORMs"
     },
     "cloud": {
       "title": "Cloud",

@@ -11,7 +11,7 @@
     },
     {
       "title": "APIs",
-      "skills": ["RESTful", "SOAP", "WCF", "WebHook"]
+      "skills": ["RESTful", "SOAP", "WCF", "WebHook", "Swagger", "JWT"]
     },
     {
       "title": "Cloud Platforms",
