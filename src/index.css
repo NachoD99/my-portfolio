@@ -10,14 +10,17 @@
   padding: 0;
   box-sizing: border-box;
 }
- #root {
+
+#root {
   height: 100%;
   margin: 0;
   padding: 0;
 }
+
 body {
   font-family: 'Inter', sans-serif;
   line-height: 1.6;
+  overflow-x: hidden;
   color: #ffffff;
   background-color: #111827;
 }
@@ -26,7 +29,8 @@ html {
   scroll-behavior: smooth;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: 'Space Grotesk', sans-serif;
 }
 
