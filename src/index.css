@@ -5,6 +5,36 @@
 @tailwind utilities;
 
 
+:root {
+  --bg-body: #0d1117;
+  --bg-section-alt: rgba(31,41,55,0.3);
+  --bg-card: rgba(30,41,59,0.5);
+  --bg-chip: #1f2937;
+  --text-primary: #e5e7eb;
+  --text-secondary: #9ca3af;
+  --text-bright: #ffffff;
+  --text-muted: #d1d5db;
+  --border: #374151;
+  --nav-bg: rgba(13,17,23,0.85);
+  --drawer-bg: #0f172a;
+  --btn-border: #4b5563;
+}
+
+html[data-theme="light"] {
+  --bg-body: #f1f5f9;
+  --bg-section-alt: rgba(226,232,240,0.5);
+  --bg-card: rgba(255,255,255,0.85);
+  --bg-chip: #e2e8f0;
+  --text-primary: #1e293b;
+  --text-secondary: #64748b;
+  --text-bright: #0f172a;
+  --text-muted: #475569;
+  --border: #cbd5e1;
+  --nav-bg: rgba(248,250,252,0.9);
+  --drawer-bg: #f8fafc;
+  --btn-border: #cbd5e1;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -21,8 +51,32 @@ body {
   font-family: 'Inter', sans-serif;
   line-height: 1.6;
   overflow-x: hidden;
-  color: #ffffff;
-  background-color: #111827;
+  color: var(--text-bright);
+  background-color: var(--bg-body);
+  background-image:
+    radial-gradient(circle, rgba(255,255,255,0.055) 1px, transparent 1px),
+    radial-gradient(ellipse 600px 500px at 90% 8%,  rgba(96,165,250,0.09)  0%, transparent 65%),
+    radial-gradient(ellipse 550px 450px at 10% 22%, rgba(139,92,246,0.09)  0%, transparent 65%),
+    radial-gradient(ellipse 600px 500px at 85% 38%, rgba(236,72,153,0.07)  0%, transparent 65%),
+    radial-gradient(ellipse 550px 450px at 12% 53%, rgba(96,165,250,0.08)  0%, transparent 65%),
+    radial-gradient(ellipse 600px 500px at 88% 67%, rgba(139,92,246,0.08)  0%, transparent 65%),
+    radial-gradient(ellipse 550px 450px at 10% 80%, rgba(236,72,153,0.07)  0%, transparent 65%),
+    radial-gradient(ellipse 600px 500px at 82% 93%, rgba(96,165,250,0.08)  0%, transparent 65%);
+  background-size: 28px 28px, auto, auto, auto, auto, auto, auto, auto;
+  background-attachment: scroll;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+html[data-theme="light"] body {
+  background-image:
+    radial-gradient(circle, rgba(0,0,0,0.06) 1px, transparent 1px),
+    radial-gradient(ellipse 600px 500px at 90% 8%,  rgba(59,130,246,0.07)  0%, transparent 65%),
+    radial-gradient(ellipse 550px 450px at 10% 22%, rgba(139,92,246,0.07)  0%, transparent 65%),
+    radial-gradient(ellipse 600px 500px at 85% 38%, rgba(236,72,153,0.05)  0%, transparent 65%),
+    radial-gradient(ellipse 550px 450px at 12% 53%, rgba(59,130,246,0.06)  0%, transparent 65%),
+    radial-gradient(ellipse 600px 500px at 88% 67%, rgba(139,92,246,0.06)  0%, transparent 65%),
+    radial-gradient(ellipse 550px 450px at 10% 80%, rgba(236,72,153,0.05)  0%, transparent 65%),
+    radial-gradient(ellipse 600px 500px at 82% 93%, rgba(59,130,246,0.06)  0%, transparent 65%);
 }
 
 html {
@@ -44,12 +98,12 @@ h2 {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #4b5563;
+  background: linear-gradient(to bottom, #3b82f6, #8b5cf6);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #6b7280;
+  background: linear-gradient(to bottom, #60a5fa, #a78bfa);
 }
 
 /* Smooth animations */

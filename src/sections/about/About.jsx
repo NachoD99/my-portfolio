@@ -77,14 +77,14 @@ export default function About() {
                     {/* Text */}
                     <Box sx={{ flex: 1 }}>
                         <Typography
-                            variant="body1"
-                            sx={{ color: "#d1d5db", mb: 3, lineHeight: 1.75 }}
+                            variant="h6"
+                            sx={{ color: "var(--text-primary)", mb: 3, lineHeight: 1.75, fontWeight: 400 }}
                         >
                             {t("paragraph1")}
                         </Typography>
                         <Typography
                             variant="body1"
-                            sx={{ color: "#d1d5db", mb: 3, lineHeight: 1.75 }}
+                            sx={{ color: "var(--text-muted)", mb: 3, lineHeight: 1.75 }}
                         >
                             {t("paragraph2")}
                         </Typography>
@@ -123,8 +123,8 @@ export default function About() {
                                     sx={{
                                         p: 3,
                                         width: "100%",
-                                        backgroundColor: "rgba(30,41,59,0.5)",
-                                        border: "1px solid #374151",
+                                        backgroundColor: "var(--bg-card)",
+                                        border: "1px solid var(--border)",
                                         borderRadius: 8,
                                         transition: "transform 0.3s, box-shadow 0.3s",
                                         "&:hover": {
@@ -138,11 +138,11 @@ export default function About() {
                                         <Box>
                                             <Typography
                                                 variant="subtitle1"
-                                                sx={{ fontWeight: 600, mb: 1, color: "#fff", fontFamily: 'Space Grotesk' }}
+                                                sx={{ fontWeight: 600, mb: 1, color: "var(--text-bright)", fontFamily: 'Space Grotesk' }}
                                             >
                                                 {item.title}
                                             </Typography>
-                                            <Typography variant="body2" sx={{ color: "#9ca3af" }}>
+                                            <Typography variant="body2" sx={{ color: "var(--text-secondary)" }}>
                                                 {item.description}
                                             </Typography>
                                         </Box>

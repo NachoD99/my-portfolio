@@ -81,8 +81,8 @@ export default function MobileNav() {
                         onClose={() => setDrawerOpen(false)}
                         PaperProps={{
                             sx: {
-                                backgroundColor: "#0f172a",
-                                color: "#ffffff",
+                                backgroundColor: "var(--drawer-bg)",
+                                color: "var(--text-bright)",
                                 width: "70%",
                             },
                         }}

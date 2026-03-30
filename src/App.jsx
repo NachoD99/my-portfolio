@@ -11,23 +11,26 @@ import Certifications from "./sections/certifications/Certifications"
 import LanguagesSection from "./sections/languages/MyLanguages"
 import Contact from "./sections/contact/Contact"
 import ToTop from "./components/layout/ToTop";
-import "./i18n"; 
+import "./i18n";
+import { ColorModeProvider } from "./context/ThemeContext";
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-900 text-white">
-      <Navigation />
-      <Hero />
-      <About />
-      <Education />
-      <Skills />
-      <Experience />
-      <Proyects />
-      <Certifications />
-      <LanguagesSection />
-      <Contact />
-      <ToTop />
-    </div>
+    <ColorModeProvider>
+      <div className="min-h-screen">
+        <Navigation />
+        <Hero />
+        <About />
+        <Experience />
+        <Proyects />
+        <Skills />
+        {/* <Certifications /> */}
+        <Education />
+        <LanguagesSection />
+        <Contact />
+        <ToTop />
+      </div>
+    </ColorModeProvider>
   )
 }
 

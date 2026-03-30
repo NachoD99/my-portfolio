@@ -13,7 +13,7 @@ export default function Experience() {
   const jobs = t("jobs", { returnObjects: true });
 
   return (
-    <Box id="experience" sx={{ py: 10, px: 3, backgroundColor: "rgba(31,41,55,0.3)" }}>
+    <Box id="experience" sx={{ py: 14, px: 3}}>
       <Box sx={{ maxWidth: "1200px", mx: "auto" }}>
         <Typography
           variant="h3"
@@ -64,8 +64,8 @@ export default function Experience() {
         elevation={3}
         sx={{
           p: 4,
-          backgroundColor: "rgba(30,41,59,0.5)",
-          border: "1px solid #374151",
+          backgroundColor: "var(--bg-card)",
+          border: "1px solid var(--border)",
           borderRadius: 8,
           transition: "all 0.3s ease",
           '&:hover': {
@@ -88,16 +88,16 @@ export default function Experience() {
             </Box>
           </Grid>
           <Grid item xs>
-            <Typography variant="h6" sx={{ mb: 1, fontWeight: 600, color: "#fff", fontFamily: 'Space Grotesk' }}>
+            <Typography variant="h6" sx={{ mb: 1, fontWeight: 600, color: "var(--text-bright)", fontFamily: 'Space Grotesk' }}>
               {job.title}
             </Typography>
             <Typography variant="subtitle2" sx={{ color: iconColor, mb: 1 }}>
               {job.company}
             </Typography>
-            <Typography variant="body2" sx={{ color: "#9ca3af", mb: 2 }}>
+            <Typography variant="body2" sx={{ color: "var(--text-secondary)", mb: 2 }}>
               {job.date}
             </Typography>
-            <Typography variant="body1" sx={{ color: "#d1d5db" }}>
+            <Typography variant="body1" sx={{ color: "var(--text-muted)" }}>
               {job.description}
             </Typography>
           </Grid>

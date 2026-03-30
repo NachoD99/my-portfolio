@@ -54,10 +54,11 @@ export default function Skills() {
           <Paper
             elevation={3}
             sx={{
-              width: 300,
+              minWidth: 260,
+              maxWidth: 340,
               p: 3,
-              backgroundColor: "rgba(30,41,59,0.5)",
-              border: "1px solid #374151",
+              backgroundColor: "var(--bg-card)",
+              border: "1px solid var(--border)",
               borderRadius: 8,
               '&:hover': {
                 scale: 1.05,

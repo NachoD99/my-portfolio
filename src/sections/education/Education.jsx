@@ -11,7 +11,7 @@ import { useTranslation } from "react-i18next";
 export default function Education() {
     const { t } = useTranslation("education");
     return (
-        <Box id="education" sx={{ py: 10, px: 3, backgroundColor: "rgba(31,41,55,0.3)" }}>
+        <Box id="education" sx={{ py: 8, px: 3}}>
             <Box sx={{ maxWidth: "1200px", mx: "auto" }}>
                 <Typography
                     variant="h3"
@@ -41,8 +41,8 @@ export default function Education() {
                             elevation={3}
                             sx={{
                                 p: 4,
-                                backgroundColor: "rgba(30,41,59,0.5)",
-                                border: "1px solid #374151",
+                                backgroundColor: "var(--bg-card)",
+                                border: "1px solid var(--border)",
                                 '&:hover': {
                                     borderColor: "rgba(96,165,250,0.5)",
                                     boxShadow: "0 0 15px rgba(96,165,250)",
@@ -65,16 +65,16 @@ export default function Education() {
                                     </Box>
                                 </Grid>
                                 <Grid item xs>
-                                    <Typography variant="h6" sx={{ mb: 1, fontWeight: 600, color: "#fff", fontFamily: 'Space Grotesk' }}>
+                                    <Typography variant="h6" sx={{ mb: 1, fontWeight: 600, color: "var(--text-bright)", fontFamily: 'Space Grotesk' }}>
                                         {t("items.0.degree")}
                                     </Typography>
                                     <Typography variant="subtitle2" sx={{ color: "#60a5fa", mb: 1 }}>
                                         {t("items.0.institution")}
                                     </Typography>
-                                    <Typography variant="body2" sx={{ color: "#9ca3af", mb: 2 }}>
+                                    <Typography variant="body2" sx={{ color: "var(--text-secondary)", mb: 2 }}>
                                         {t("items.0.duration")}
                                     </Typography>
-                                    <Stack component="ul" spacing={0.5} sx={{ pl: 2, color: "#d1d5db" }}>
+                                    <Stack component="ul" spacing={0.5} sx={{ pl: 2, color: "var(--text-muted)" }}>
                                         {t("items.0.highlights", { returnObjects: true }).map((point, index) => (
                                             <li key={index}>{point}</li>
                                         ))}
@@ -94,8 +94,8 @@ export default function Education() {
                             elevation={3}
                             sx={{
                                 p: 4,
-                                backgroundColor: "rgba(30,41,59,0.5)",
-                                border: "1px solid #374151",
+                                backgroundColor: "var(--bg-card)",
+                                border: "1px solid var(--border)",
                                 '&:hover': {
                                     borderColor: "rgba(168,85,247,0.5)",
                                     boxShadow: "0 0 15px rgba(168,85,247)",
@@ -118,13 +118,13 @@ export default function Education() {
                                     </Box>
                                 </Grid>
                                 <Grid item xs>
-                                    <Typography variant="h6" sx={{ mb: 1, fontWeight: 600, color: "#fff", fontFamily: 'Space Grotesk' }}>
+                                    <Typography variant="h6" sx={{ mb: 1, fontWeight: 600, color: "var(--text-bright)", fontFamily: 'Space Grotesk' }}>
                                         {t("items.1.degree")}
                                     </Typography>
                                     <Typography variant="subtitle2" sx={{ color: "#a78bfa", mb: 1 }}>
                                         {t("items.1.institution")}
                                     </Typography>
-                                    <Typography variant="body2" sx={{ color: "#9ca3af" }}>
+                                    <Typography variant="body2" sx={{ color: "var(--text-secondary)" }}>
                                         {t("items.1.duration")}
                                     </Typography>
                                 </Grid>

@@ -13,7 +13,7 @@ export default function Certifications() {
 const certifications = t("items", { returnObjects: true }) || [];
 
   return (
-    <Box id="certifications" sx={{ py: 10, px: 3, backgroundColor: "rgba(31,41,55,0.3)" }}>
+    <Box id="certifications" sx={{ py: 10, px: 3, backgroundColor: "var(--bg-section-alt)" }}>
       <Box sx={{ maxWidth: "1200px", mx: "auto" }}>
         <Typography
           variant="h3"
@@ -53,8 +53,8 @@ const certifications = t("items", { returnObjects: true }) || [];
                     width: {md:"500px", xs:"100%"},
                     p: 3,
                     m: 0,
-                    backgroundColor: "rgba(30,41,59,0.5)",
-                    border: "1px solid #374151",
+                    backgroundColor: "var(--bg-card)",
+                    border: "1px solid var(--border)",
                     borderRadius: 8,
                     transition: "all 0.3s ease",
                     '&:hover': {
@@ -76,7 +76,7 @@ const certifications = t("items", { returnObjects: true }) || [];
                     </Box>
                     <Typography
                       variant="subtitle1"
-                      sx={{ fontWeight: 600, color: "#e5e7eb", fontFamily: 'Space Grotesk' }}
+                      sx={{ fontWeight: 600, color: "var(--text-primary)", fontFamily: 'Space Grotesk' }}
                     >
                       {cert}
                     </Typography>

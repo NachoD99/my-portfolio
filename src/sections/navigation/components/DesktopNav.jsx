@@ -71,7 +71,7 @@ export default function DesktopNav() {
                                     position: "relative",
                                     px: 1,
                                     py: 0.5,
-                                    color: isActive ? "#a78bfa" : "#cbd5e1",
+                                    color: isActive ? "#a78bfa" : "var(--text-muted)",
                                     fontWeight: isActive ? 600 : 400,
                                     fontFamily: 'Space Grotesk',
                                     fontSize: "0.9rem",

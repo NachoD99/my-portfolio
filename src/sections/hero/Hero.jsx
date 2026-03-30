@@ -72,6 +72,18 @@ export default function Hero() {
       }}
     >
       <Background/>
+      <Box
+        sx={{
+          position: "absolute",
+          bottom: 0,
+          left: 0,
+          right: 0,
+          height: "180px",
+          background: "linear-gradient(to bottom, transparent, var(--bg-body))",
+          zIndex: 1,
+          pointerEvents: "none",
+        }}
+      />
 
       <Box sx={{ position: "relative", zIndex: 10, maxWidth: "64rem", mx: "auto" }}>
         <Box sx={{ mb: { xs: 0, md: 6 } }}>
@@ -95,6 +107,7 @@ export default function Hero() {
                 p: 0.5,
                 mt: {xs: 6},
                 background: "linear-gradient(to bottom right, #60a5fa, #a78bfa)",
+                boxShadow: "0 0 40px rgba(96,165,250,0.45), 0 0 80px rgba(168,85,247,0.25), 0 0 120px rgba(96,165,250,0.1)",
               }}
             >
               <Box
@@ -139,7 +152,7 @@ export default function Hero() {
         <Typography
           variant="h5"
           sx={{
-            color: "#d1d5db",
+            color: "var(--text-muted)",
             mb: 5,
             lineHeight: 1.6,
           }}
@@ -183,7 +196,7 @@ export default function Hero() {
               py: 1.5,
               borderColor: "#4b5563",
               borderRadius: 8,
-              color: "#e5e7eb",
+              color: "var(--text-muted)",
               fontWeight: "600",
               textTransform: "none",
               '&:hover': {

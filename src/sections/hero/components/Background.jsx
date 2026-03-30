@@ -1,8 +1,10 @@
 "use client";
 import Box from "@mui/material/Box";
 import { motion } from "framer-motion";
+import { useColorMode } from "../../../context/ThemeContext";
 
 export default function Hero() {
+  const { mode } = useColorMode();
 
   const GlowBox = ({ top, left, bottom, right, width, height, color }) => (
     <Box
@@ -40,7 +42,7 @@ export default function Hero() {
         sx={{
           position: "absolute",
           inset: 0,
-          backgroundImage: `url('/images/blob-scene-haikei.svg')`,
+          backgroundImage: `url('/images/${mode === "dark" ? "bg-dark" : "bg-light"}.svg')`,
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
           backgroundSize: "cover",
@@ -48,10 +50,11 @@ export default function Hero() {
           zIndex: 0,
         }}
       />
-      <GlowBox top="25%" left="25%" width={256} height={256} color="rgba(59, 130, 246, 0.1)" />
-      <GlowBox top="10%" left="85%" width={256} height={256} color="rgba(224, 59, 246, 0.1)" />
-      <GlowBox bottom="25%" right="25%" width={384} height={384} color="rgba(168, 85, 247, 0.1)" />
-      <GlowBox bottom="-15%" left="10%" width={384} height={384} color="rgba(78, 59, 246, 0.1)" />
+      <GlowBox top="20%" left="20%" width={320} height={320} color="rgba(59, 130, 246, 0.18)" />
+      <GlowBox top="5%" left="80%" width={300} height={300} color="rgba(224, 59, 246, 0.18)" />
+      <GlowBox bottom="20%" right="20%" width={450} height={450} color="rgba(168, 85, 247, 0.16)" />
+      <GlowBox bottom="-10%" left="5%" width={420} height={420} color="rgba(78, 59, 246, 0.16)" />
+      <GlowBox top="50%" left="50%" width={200} height={200} color="rgba(236, 72, 153, 0.1)" />
     </>
   );
 }

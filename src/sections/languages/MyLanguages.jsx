@@ -16,7 +16,7 @@ export default function MyLanguages() {
   }));
 
   return (
-    <Box id="languages" sx={{ py: 10, px: 3, }}>
+    <Box id="languages" sx={{ py: 8, px: 3 }}>
       <Box sx={{ maxWidth: "1200px", mx: "auto" }}>
         <Typography
           variant="h3"
@@ -50,8 +50,8 @@ export default function MyLanguages() {
                     width: 250, // fijo para centrar
                     p: 3,
                     textAlign: "center",
-                    backgroundColor: "rgba(30,41,59,0.5)",
-                    border: "1px solid #374151",
+                    backgroundColor: "var(--bg-card)",
+                    border: "1px solid var(--border)",
                     borderRadius: 8,
                     "&:hover": {
                       boxShadow: `0 0 15px ${color}`,
@@ -79,7 +79,7 @@ export default function MyLanguages() {
                       }}
                     />
                   </Box>
-                  <Typography variant="subtitle1" sx={{ fontWeight: 600, mb: 1, color: "#fff", fontFamily: 'Space Grotesk' }}>
+                  <Typography variant="subtitle1" sx={{ fontWeight: 600, mb: 1, color: "var(--text-bright)", fontFamily: 'Space Grotesk' }}>
                     {lang}
                   </Typography>
                   <Typography variant="body2" sx={{ color }}>

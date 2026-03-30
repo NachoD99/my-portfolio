@@ -11,7 +11,7 @@ import { useTranslation } from "react-i18next";
 export default function Contact() {
   const { t } = useTranslation("contact");
   return (
-    <Box id="contact" sx={{ py: 10, px: 3, backgroundColor: "rgba(31,41,55,0.3)" }}>
+    <Box id="contact" sx={{ py: 10, px: 3 }}>
       <Box sx={{ maxWidth: "800px", mx: "auto", textAlign: "center" }}>
           <Typography
             variant="h3"
@@ -34,7 +34,7 @@ export default function Contact() {
         >
           <Typography
             variant="h6"
-            sx={{ color: "#d1d5db", mb: 6 }}
+            sx={{ color: "var(--text-muted)", mb: 6 }}
           >
             {t("description")}
           </Typography>
@@ -65,8 +65,8 @@ export default function Contact() {
               icon: <Linkedin size={18} />,
               label: "LinkedIn",
               sx: {
-                borderColor: "#4b5563",
-                color: "#d1d5db",
+                borderColor: "var(--btn-border)",
+                color: "var(--text-muted)",
                 '&:hover': {
                   borderColor: "#60a5fa",
                   color: "#60a5fa",
@@ -78,8 +78,8 @@ export default function Contact() {
               icon: <Github size={18} />,
               label: "GitHub",
               sx: {
-                borderColor: "#4b5563",
-                color: "#d1d5db",
+                borderColor: "var(--btn-border)",
+                color: "var(--text-muted)",
                 '&:hover': {
                   borderColor: "#a78bfa",
                   color: "#a78bfa",
@@ -116,7 +116,7 @@ export default function Contact() {
             </motion.div>
           ))}
         </Stack>
-        <Typography variant="body2" sx={{ color: "#9ca3af" }}>
+        <Typography variant="body2" sx={{ color: "var(--text-secondary)" }}>
            {t("footer")}
         </Typography>
       </Box>

@@ -3,21 +3,27 @@
 import {
   AppBar,
   Toolbar,
-  Typography
+  Typography,
+  IconButton,
 } from "@mui/material";
+import { Sun, Moon } from "lucide-react";
 import DesktopNav from "./components/DesktopNav";
 import MobileNav from "./components/MobileNav";
+import { useColorMode } from "../../context/ThemeContext";
 
 export default function Navigation() {
+  const { toggle, mode } = useColorMode();
+
   return (
     <AppBar
       position="fixed"
       elevation={4}
       color="transparent"
       sx={{
-        backdropFilter: "blur(4px)",
-        backgroundColor: "rgba(15, 23, 42, 0.95)",
-        borderBottom: "1px solid rgba(71, 85, 105, 0.8)",
+        backdropFilter: "blur(16px) saturate(180%)",
+        backgroundColor: "var(--nav-bg)",
+        borderBottom: "1px solid rgba(96, 165, 250, 0.15)",
+        boxShadow: "0 1px 30px rgba(0,0,0,0.15)",
       }}
     >
       <Toolbar
@@ -44,8 +50,15 @@ export default function Navigation() {
           Ignacio Davanzo
         </Typography>
 
-        <DesktopNav/>
-        <MobileNav/>
+        <DesktopNav />
+        <IconButton
+          onClick={toggle}
+          size="small"
+          sx={{ color: "var(--text-secondary)", mx: 1 }}
+        >
+          {mode === "dark" ? <Sun size={20} /> : <Moon size={20} />}
+        </IconButton>
+        <MobileNav />
       </Toolbar>
     </AppBar>
   );
